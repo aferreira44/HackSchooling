@@ -5,6 +5,6 @@ def leap_year?(year)
     year % 400 == 0 || year % 4 == 0 && year % 100 != 0
 end
 
-(start_year..end_year).each { |year|
-    puts "#{year} is a leap year? #{leap_year?(year)}"
-}
+(start_year..end_year).each do |year|
+    puts year if leap_year?(year)
+end
